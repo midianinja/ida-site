@@ -9,10 +9,7 @@ phases:
     commands:
       - echo Build started on `date`
       - echo Using variables
-      - echo REPOSITORY_URI = $REPOSITORY_URI
       - echo NODE_ENV = $NODE_ENV
-      - echo STAGE = $STAGE
-      - echo DOMAIN = $DOMAIN
       - npm run-script build
 
     post_build:
