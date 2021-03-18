@@ -1,11 +1,12 @@
 {
-  "name": "site",
+  "name": "website",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "start:eb": "node_modules/next/dist/bin/next start",
     "lint:fix": "eslint --fix ."
   },
   "dependencies": {
