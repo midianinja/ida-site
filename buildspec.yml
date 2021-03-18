@@ -21,3 +21,4 @@ artifacts:
     - public/**/*
     - node_modules/**/*
     - .ebextenstions/**/*
+    - package.json
