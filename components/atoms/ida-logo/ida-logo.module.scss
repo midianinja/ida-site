@@ -5,9 +5,10 @@
 
   &.__big {
     height: 77px;
+
+    @include for-tablet-landscape-up {
+      height: 100px;
+    }
   }
 
-  @include for-tablet-landscape-up {
-    height: 77px;
-  }
 }

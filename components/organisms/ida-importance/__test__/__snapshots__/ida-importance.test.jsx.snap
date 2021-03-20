@@ -1,0 +1,97 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IDAImportance matches snapshot importance list 1`] = `
+<section
+  className="container"
+>
+  <h2
+    className="title"
+  >
+    Por que a IDA importa?
+  </h2>
+  <div
+    className="cardsWrapper"
+  >
+    <div
+      className="card"
+    >
+      <img
+        alt=""
+        className="icon"
+        data-testid="icon-src"
+        src="/static/icons/ilustra-simplify-login.svg"
+      />
+      <h3
+        className="title"
+      >
+        Login simplificado
+      </h3>
+      <p
+        className="explanation"
+      >
+        Diversas plataformas, um único login. A IDa dá acesso a diversas tecnologias num só lugar.
+      </p>
+    </div>
+    <div
+      className="card"
+    >
+      <img
+        alt=""
+        className="icon"
+        data-testid="icon-src"
+        src="/static/icons/ilustra-app-switch.svg"
+      />
+      <h3
+        className="title"
+      >
+        Suíte de aplicativos
+      </h3>
+      <p
+        className="explanation"
+      >
+        Um serviço de autenticação digital para ativistas e organizações integrado a um banco de tecnologias sociais para o comum.
+      </p>
+    </div>
+    <div
+      className="card"
+    >
+      <img
+        alt=""
+        className="icon"
+        data-testid="icon-src"
+        src="/static/icons/ilustra-data-control.svg"
+      />
+      <h3
+        className="title"
+      >
+        Governança de dados
+      </h3>
+      <p
+        className="explanation"
+      >
+        A IDa é uma plataforma que preza pela sua segurança. Você detém o controle e compartilha seus dados de acordo com as suas escolhas. 
+      </p>
+    </div>
+    <div
+      className="card"
+    >
+      <img
+        alt=""
+        className="icon"
+        data-testid="icon-src"
+        src="/static/icons/ilustra-open-source.svg"
+      />
+      <h3
+        className="title"
+      >
+        Software livre
+      </h3>
+      <p
+        className="explanation"
+      >
+        Tecnologia de ponta feita para a ponta, em rede aberta e colaborativa.
+      </p>
+    </div>
+  </div>
+</section>
+`;

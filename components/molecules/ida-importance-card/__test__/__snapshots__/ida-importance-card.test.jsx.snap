@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IDAImportanceCard matches snapshot card 1`] = `
+<div
+  className="card"
+>
+  <img
+    alt=""
+    className="icon"
+    data-testid="icon-src"
+    src="/static/icon/ilustra-app-switch.svg"
+  />
+  <h3
+    className="title"
+  >
+    Test
+  </h3>
+  <p
+    className="explanation"
+  >
+    Test explanation about IDA
+  </p>
+</div>
+`;

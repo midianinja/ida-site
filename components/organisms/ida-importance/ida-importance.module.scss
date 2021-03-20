@@ -1,0 +1,33 @@
+@import '../../../styles/variables.scss';
+@import '../../../styles/devices.scss';
+
+.container {
+  width: 100%;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: $spacing-inset-sm;
+  padding-right: $spacing-inset-sm;
+
+  > .title {
+    color: $neutral-color-1;
+    font-family: $font-family-secondary;
+    font-size: $font-size-xl;
+    text-align: center;
+    line-height: $line-height-compact;
+    font-weight: $font-weight-bold;
+    margin-bottom: 70px;
+  }
+
+  > .cardsWrapper {
+    display: grid;
+    grid-gap: $spacing-stack-xs;
+    padding-left: $spacing-inset-sm;
+    padding-right: $spacing-inset-sm;
+    margin-bottom: $spacing-stack-xxxl;
+
+    @include for-tablet-landscape-up {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
+}

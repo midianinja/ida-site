@@ -1,0 +1,29 @@
+@import '../../../styles/variables.scss';
+@import '../../../styles/devices.scss';
+
+.card {
+  display: grid;
+  grid-gap: $spacing-stack-xxs;
+  text-align: center;
+  justify-items: center;
+
+  .icon {
+    height: 80px;
+  }
+
+  .title {
+    color: $neutral-color-1;
+    font-family: $font-family-primary;
+    font-weight: $font-weight-bold;
+    font-size: $font-size-md;
+    line-height: $line-height-near;
+  }
+
+  .explanation {
+    color: $neutral-color-1;
+    font-family: $font-family-primary;
+    font-size: $font-size-xs;
+    font-weight: $font-weight-regular;
+    line-height: $line-height-compact;
+  }
+}

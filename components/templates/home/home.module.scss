@@ -10,39 +10,59 @@
   min-height: 100vh;
   padding: $spacing-squish-lg;
 
-  > .title {
+  @include for-tablet-landscape-up {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: $spacing-stack-xxs;
-    margin-bottom: $spacing-stack-xxs;
-    justify-items: center;
-    text-align: center;
-    color: $neutral-color-1;
-    font-family: $font-family-primary;
-    font-size: $font-size-xl;
-    line-height: $line-height-compact;
-    font-weight: $font-weight-bold;
-    padding-left: $spacing-inset-sm;
-    padding-right: $spacing-inset-sm;
+    grid-template-columns: 1fr 300px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  > .description {
-    text-align: center;
-    color: $neutral-color-1;
-    font-family: $font-family-primary;
-    font-size: $font-size-xs;
-    line-height: $line-height-far;
-    font-weight: $font-weight-regular;
-    margin-bottom: $spacing-stack-xxs;
-  }
+  > .contentWrapper {
+    .title {
+      margin-top: $spacing-stack-xxs;
+      margin-bottom: $spacing-stack-xxs;
+      justify-items: center;
+      text-align: center;
+      color: $neutral-color-1;
+      font-family: $font-family-secondary;
+      font-size: $font-size-xl;
+      line-height: $line-height-compact;
+      font-weight: $font-weight-bold;
+      padding-left: $spacing-inset-sm;
+      padding-right: $spacing-inset-sm;
 
-  > .actionWrapper {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-gap: $spacing-stack-xxs;
-  }
+      @include for-tablet-landscape-up {
+        text-align: left;
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+  
+    .description {
+      text-align: center;
+      color: $neutral-color-1;
+      font-family: $font-family-primary;
+      font-size: $font-size-xs;
+      line-height: $line-height-far;
+      font-weight: $font-weight-regular;
+      margin-bottom: $spacing-stack-xxs;
 
-  > .moreButton {
+      @include for-tablet-landscape-up {
+        text-align: left;
+      }
+    }
+  
+    .actionWrapper {
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-gap: $spacing-stack-xxs;
+      max-width: 300px;
+    }
+  
+  }
+  
+  .moreButton {
     width: 50px;
     height: 50px;
     position: absolute;
@@ -52,6 +72,7 @@
     background-color: transparent;
     cursor: pointer;
   }
+  
 }
 
 .container > section.about {

@@ -2,6 +2,7 @@ import React from 'react';
 import IDALogo from '../../atoms/ida-logo/ida-logo';
 import FilledButton from '../../atoms/filled-button/filled-button';
 import OutlineButton from '../../atoms/outline-button/outline-button';
+import IDAImportance from '../../organisms/ida-importance/ida-importance';
 import style from './home.module.scss';
 
 /**
@@ -11,31 +12,35 @@ import style from './home.module.scss';
 const Home = () => (
   <div className={style.container}>
     <section className={style.cta}>
-
-      <h1 className={style.title}>
+      <div>
         <IDALogo big />
-        Sua conta segura para todas as lutas
-      </h1>
+      </div>
       
-      <p className={style.description}>
-        Um cadastro único feito para  quem luta por um planeta mais justo, consciente e igualitário
-      </p>
-      
-      <div className={style.actionWrapper}>
-        <OutlineButton
-          color="white"
-          small
-          onClick={() => {}}
-        >
-          Entrar
-        </OutlineButton>
-        <FilledButton
-          color="white"
-          small
-          onClick={() => {}}
-        >
-          Cadastre-se
-        </FilledButton>
+      <div className={style.contentWrapper}>
+        <h1 className={style.title}>
+          Sua conta segura para todas as lutas
+        </h1>
+
+        <p className={style.description}>
+          Um cadastro único feito para  quem luta por um planeta mais justo, consciente e igualitário
+        </p>
+        
+        <div className={style.actionWrapper}>
+          <OutlineButton
+            color="white"
+            small
+            onClick={() => {}}
+          >
+            Entrar
+          </OutlineButton>
+          <FilledButton
+            color="white"
+            small
+            onClick={() => {}}
+          >
+            Cadastre-se
+          </FilledButton>
+        </div>
       </div>
 
       <button
@@ -64,6 +69,8 @@ const Home = () => (
         Cadastre-se
       </FilledButton>
     </section>
+
+    <IDAImportance />
   </div>
 );
 
