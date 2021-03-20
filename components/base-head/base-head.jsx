@@ -8,10 +8,12 @@ import Head from 'next/head';
  * @returns {React.Component} head component
  */
 const BaseHead = ({ title }) => (
-  <Head>
-    <title data-testid="title">{title} | Identidade Digital Ativista</title>
-    <link rel="icon" href="/favicon.ico" />
-  </Head>
+  <div data-testid="base-head">
+    <Head>
+      <title data-testid="title">{title} | Identidade Digital Ativista</title>
+      <link rel="icon" href="/favicon.ico" />
+    </Head>
+  </div>
 );
 
 BaseHead.propTypes = {

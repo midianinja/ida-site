@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header matches snapshot header 1`] = `
+<header
+  className="header"
+>
+  <img
+    alt="Logo da Identidade Digital Ativista"
+    className="logo"
+    data-testid="ida-logo"
+    src="/static/images/colorful-ida-logo.svg"
+  />
+  <div
+    className="actionWrapper"
+  >
+    <button
+      className="button __white __small"
+      data-testid="button"
+      disabled={false}
+      onClick={[Function]}
+      type="button"
+    >
+      Entrar
+    </button>
+    <button
+      className="button __white __small"
+      data-testid="button"
+      disabled={false}
+      onClick={[Function]}
+      type="button"
+    >
+      Cadastre-se
+    </button>
+  </div>
+</header>
+`;

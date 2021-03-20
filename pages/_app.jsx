@@ -11,6 +11,7 @@ import '../styles/variables.scss';
  */
 const RootComponent = ({ Component, pageProps }) => <Component {...pageProps} />;
 
+// define react prototypes
 RootComponent.propTypes = {
   Component: PropTypes.node.isRequired,
   pageProps: PropTypes.objectOf(PropTypes.object).isRequired

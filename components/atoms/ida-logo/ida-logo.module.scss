@@ -1,0 +1,13 @@
+@import '../../../styles/devices';
+
+.logo {
+  height: 40px;
+
+  &.__big {
+    height: 77px;
+  }
+
+  @include for-tablet-landscape-up {
+    height: 77px;
+  }
+}

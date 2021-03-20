@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FilledButton matches snapshot default button 1`] = `
+<button
+  className="button"
+  data-testid="button"
+  disabled={false}
+  onClick={[Function]}
+  type="button"
+>
+  Default Test!
+</button>
+`;
+
+exports[`FilledButton matches snapshot small button 1`] = `
+<button
+  className="button __small"
+  data-testid="button"
+  disabled={false}
+  onClick={[Function]}
+  type="button"
+>
+  Small Test!
+</button>
+`;
+
+exports[`FilledButton matches snapshot white button 1`] = `
+<button
+  className="button __white"
+  data-testid="button"
+  disabled={false}
+  onClick={[Function]}
+  type="button"
+>
+  White Test!
+</button>
+`;

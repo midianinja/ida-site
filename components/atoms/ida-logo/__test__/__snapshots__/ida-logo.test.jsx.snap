@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IDA Logo matches snapshot big button 1`] = `
+<img
+  alt="Logo da Identidade Digital Ativista"
+  className="logo __big"
+  data-testid="ida-logo"
+  src="/static/images/colorful-ida-logo.svg"
+/>
+`;
+
+exports[`IDA Logo matches snapshot default button 1`] = `
+<img
+  alt="Logo da Identidade Digital Ativista"
+  className="logo"
+  data-testid="ida-logo"
+  src="/static/images/colorful-ida-logo.svg"
+/>
+`;

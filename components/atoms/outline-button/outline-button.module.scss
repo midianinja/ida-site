@@ -1,0 +1,32 @@
+@import '../../../styles/variables';
+@import '../../../styles/devices';
+
+.button {
+  display: flex;
+  align-items: center;
+	padding: $spacing-squish-xs;
+	background-color: transparent;
+	border-radius: $border-radius-sm;
+	border-style: solid;
+	border-width: $border-width-thin;
+	border-color: $brand-color-primary-medium;
+	font-family: $font-family-primary;
+	font-size: $font-size-sm;
+	font-weight: $font-weight-medium;
+	color: $brand-color-primary-medium;
+	height: $spacing-stack-md;
+	box-sizing: border-box;
+	cursor: pointer;
+	
+	&.__white {
+		border-color: $neutral-color-1;
+		color: $neutral-color-1;
+	}
+
+	&.__small {
+		height: $spacing-stack-sm;
+		padding: $spacing-squish-xs;
+		font-size: $font-size-xs;
+	}
+}
+

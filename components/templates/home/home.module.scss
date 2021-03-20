@@ -1,0 +1,73 @@
+@import '../../../styles/variables.scss';
+@import '../../../styles/devices.scss';
+
+.container > section.cta {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: $spacing-squish-lg;
+
+  > .title {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: $spacing-stack-xxs;
+    margin-bottom: $spacing-stack-xxs;
+    justify-items: center;
+    text-align: center;
+    color: $neutral-color-1;
+    font-family: $font-family-primary;
+    font-size: $font-size-xl;
+    line-height: $line-height-compact;
+    font-weight: $font-weight-bold;
+    padding-left: $spacing-inset-sm;
+    padding-right: $spacing-inset-sm;
+  }
+
+  > .description {
+    text-align: center;
+    color: $neutral-color-1;
+    font-family: $font-family-primary;
+    font-size: $font-size-xs;
+    line-height: $line-height-far;
+    font-weight: $font-weight-regular;
+    margin-bottom: $spacing-stack-xxs;
+  }
+
+  > .actionWrapper {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: $spacing-stack-xxs;
+  }
+
+  > .moreButton {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: calc(50% - 25px);
+    bottom: $spacing-stack-xxxs;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+}
+
+.container > section.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: $spacing-squish-lg;
+  margin-top: $spacing-stack-xs;
+  margin-bottom: $spacing-stack-xs;
+
+  > p.text {
+    color: $neutral-color-1;
+    line-height: $line-height-far;
+    text-align: center;
+    font-family: $font-family-primary;
+    font-size: $font-size-xs;
+    margin-bottom: $spacing-stack-xxs;
+  }
+}

@@ -1,0 +1,28 @@
+@import '../../../styles/variables';
+@import '../../../styles/devices';
+
+.button {
+	display: flex;
+	align-items: center;
+	padding: $spacing-squish-xs;
+	border-radius: $border-radius-sm;
+	background-color: $brand-color-primary-medium;
+	font-family: $font-family-primary;
+	font-size: $font-size-sm;
+	font-weight: $font-weight-medium;
+	color: $neutral-color-1;
+	height: $spacing-stack-md;
+	cursor: pointer;
+	
+	&.__white {
+		background-color: $neutral-color-1;
+		color: $brand-color-secondary-darkest;
+	}
+
+	&.__small {
+		height: $spacing-stack-sm;
+		padding: $spacing-squish-xs;
+		font-size: $font-size-xs;
+	}
+}
+

@@ -1,0 +1,24 @@
+@import '../../../styles/variables';
+@import '../../../styles/devices';
+
+.header {
+  text-align: center;
+  padding: $spacing-squish-xxs;
+
+  @include for-tablet-landscape-up {
+    display: flex;
+    justify-content: space-between;
+    padding: $spacing-squish-lg;
+  }
+
+  & > .actionWrapper {
+    display: none;
+
+    @include for-tablet-landscape-up {
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-gap: $spacing-stack-xxs;
+    }
+  }
+}
+

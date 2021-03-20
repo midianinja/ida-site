@@ -25,6 +25,7 @@ module.exports = {
     'plugin:prettier/recommended' // Make this the last element so prettier config overrides other formatting rules
   ],
   rules: {
-    'prettier/prettier': ['error', {}, { usePrettierrc: true }] // Use our .prettierrc file as source
+    'prettier/prettier': ['error', {}, { usePrettierrc: true }], // Use our .prettierrc file as source
+    'import/no-extraneous-dependencies': [0, { devDependencies: /^test\/|^spec\/|__test__\// }] // ignore extraneous dependecies on test files
   }
 };
