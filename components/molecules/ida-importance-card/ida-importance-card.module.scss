@@ -4,6 +4,7 @@
 .card {
   display: grid;
   grid-gap: $spacing-stack-xxs;
+  grid-template-rows: 80px 40px auto;
   text-align: center;
   justify-items: center;
 
@@ -16,14 +17,17 @@
     font-family: $font-family-primary;
     font-weight: $font-weight-bold;
     font-size: $font-size-md;
-    line-height: $line-height-near;
+    line-height: $line-height-compact;
+    text-align: center;
+    max-width: 120px;
   }
 
   .explanation {
+    max-width: 200px;
     color: $neutral-color-1;
     font-family: $font-family-primary;
     font-size: $font-size-xs;
     font-weight: $font-weight-regular;
-    line-height: $line-height-compact;
+    line-height: $line-height-far;
   }
 }

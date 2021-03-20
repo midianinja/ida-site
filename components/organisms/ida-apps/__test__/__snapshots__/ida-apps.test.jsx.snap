@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IDAApps matches snapshot importance list 1`] = `
+<section
+  className="container"
+>
+  <div
+    className="contentWrapper"
+  >
+    <h2
+      className="title"
+      data-testid="title"
+    >
+      Onde você já pode usar o IDA?
+    </h2>
+    <div
+      className="cardsWrapper"
+    >
+      <div
+        className="card"
+        onClick={[Function]}
+      >
+        <img
+          alt="SOM"
+          data-testid="image"
+          src="/static/images/som.png"
+        />
+        <h3
+          className="title"
+        >
+          SOM
+        </h3>
+      </div>
+      <div
+        className="card"
+        onClick={[Function]}
+      >
+        <img
+          alt="500 Cidades"
+          data-testid="image"
+          src="/static/images/500cidades.png"
+        />
+        <h3
+          className="title"
+        >
+          500 Cidades
+        </h3>
+      </div>
+    </div>
+    <div
+      className="moreWrapper"
+    >
+      <img
+        alt=""
+        src="/static/icons/more.svg"
+      />
+      <p
+        className="moreText"
+      >
+        Mais sites parceiros em breve, aguarde!
+      </p>
+    </div>
+    <div
+      className="buttonWrapper"
+    >
+      <button
+        className="button __small"
+        data-testid="button"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        Cadastre-se
+      </button>
+    </div>
+  </div>
+</section>
+`;

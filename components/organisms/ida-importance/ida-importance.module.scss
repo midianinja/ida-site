@@ -24,10 +24,12 @@
     grid-gap: $spacing-stack-xs;
     padding-left: $spacing-inset-sm;
     padding-right: $spacing-inset-sm;
-    margin-bottom: $spacing-stack-xxxl;
+    margin-bottom: $spacing-stack-sm;
+
 
     @include for-tablet-landscape-up {
       grid-template-columns: 1fr 1fr 1fr 1fr;
+      margin-bottom: $spacing-stack-xxxl;
     }
   }
 }

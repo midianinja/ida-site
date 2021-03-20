@@ -1,0 +1,74 @@
+@import '../../../styles/variables.scss';
+@import '../../../styles/devices.scss';
+
+.container {
+  width: 100%;
+  background-color: $neutral-color-1;
+
+  > .contentWrapper {
+    width: 100%;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: $spacing-stack-sm $spacing-inset-lg;
+
+    > .title {
+      max-width: 250px;
+      color: $brand-color-secondary-darkest;
+      font-family: $font-family-secondary;
+      font-size: $font-size-xl;
+      text-align: center;
+      line-height: $line-height-compact;
+      font-weight: $font-weight-bold;
+      margin-bottom: 70px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    > .cardsWrapper {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: $spacing-stack-xxs;
+      padding-left: $spacing-inset-sm;
+      padding-right: $spacing-inset-sm;
+      margin-bottom: $spacing-stack-sm;
+      justify-items: center;
+  
+      @include for-tablet-landscape-up {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      }
+    }
+
+    > .moreWrapper {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 46px 1fr;
+      grid-gap: $spacing-stack-xxs;
+      padding-left: $spacing-inset-sm;
+      padding-right: $spacing-inset-sm;
+      margin-bottom: $spacing-stack-sm;
+      align-items: center;
+
+      > .moreText {
+        font-family: $font-family-primary;
+        font-size: $font-size-xs;
+        line-height: $line-height-compact;
+        font-weight: $font-weight-regular;
+      }
+
+      @include for-tablet-landscape-up {
+        display: none;  
+      }
+    }
+    
+    > .buttonWrapper {
+      display: flex;
+      justify-content: center;
+
+      @include for-tablet-landscape-up {
+        display: none;  
+      }
+    }
+  }
+}

@@ -3,6 +3,7 @@ import IDALogo from '../../atoms/ida-logo/ida-logo';
 import FilledButton from '../../atoms/filled-button/filled-button';
 import OutlineButton from '../../atoms/outline-button/outline-button';
 import IDAImportance from '../../organisms/ida-importance/ida-importance';
+import IDAApps from '../../organisms/ida-apps/ida-apps';
 import style from './home.module.scss';
 
 /**
@@ -71,6 +72,8 @@ const Home = () => (
     </section>
 
     <IDAImportance />
+
+    <IDAApps />
   </div>
 );
 

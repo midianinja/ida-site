@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IDAAppCard matches snapshot card 1`] = `
+<div
+  className="card"
+  onClick={[Function]}
+>
+  <img
+    alt="Test"
+    data-testid="image"
+    src="/static/icon/ilustra-app-switch.svg"
+  />
+  <h3
+    className="title"
+  >
+    Test
+  </h3>
+</div>
+`;

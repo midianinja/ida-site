@@ -1,0 +1,27 @@
+@import '../../../styles/variables.scss';
+@import '../../../styles/devices.scss';
+
+.card {
+  display: grid;
+  grid-gap: $spacing-stack-xs;
+  grid-template-rows: 92px 34px;
+  text-align: center;
+  justify-items: center;
+  cursor: pointer;
+
+  .image {
+    height: 92px;
+    border-radius: $border-radius-circular;
+  }
+
+  .title {
+    color: $brand-color-secondary-darkest;
+    font-family: $font-family-primary;
+    font-weight: $font-weight-regular;
+    font-size: $font-size-xxxs;
+    line-height: $line-height-compact;
+    text-align: center;
+    text-decoration: underline;
+    max-width: 120px;
+  }
+}
