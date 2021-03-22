@@ -21,7 +21,7 @@
 
   > .cardsWrapper {
     display: grid;
-    grid-gap: $spacing-stack-xs;
+    gap: $spacing-stack-xs;
     padding-left: $spacing-inset-sm;
     padding-right: $spacing-inset-sm;
     margin-bottom: $spacing-stack-sm;

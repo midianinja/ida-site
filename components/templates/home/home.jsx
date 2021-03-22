@@ -4,6 +4,7 @@ import FilledButton from '../../atoms/filled-button/filled-button';
 import OutlineButton from '../../atoms/outline-button/outline-button';
 import IDAImportance from '../../organisms/ida-importance/ida-importance';
 import IDAApps from '../../organisms/ida-apps/ida-apps';
+import Footer from '../../organisms/footer/footer';
 import style from './home.module.scss';
 
 /**
@@ -58,22 +59,37 @@ const Home = () => (
     </section>
 
     <section className={style.about}>
+      <div className={style.connectWithWrapper}>
+        <h2 className={style.title}>Com a IDa você</h2>
+        <OutlineButton
+          color="white"
+          small
+          onClick={() => {}}
+        >
+          SE CONECTA
+        </OutlineButton>
+      </div>
+
       <p className={style.text}>
         A IDa é um serviço de autenticação digital que conecta ativistas ao Banco de Tecnologias da Mídia NINJA.
       </p>
 
-      <FilledButton
-        color="white"
-        small
-        onClick={() => {}}
-      >
-        Cadastre-se
-      </FilledButton>
+      <div className={style.actionWrapper}>
+        <FilledButton
+          color="white"
+          small
+          onClick={() => {}}
+        >
+          Cadastre-se
+        </FilledButton>
+      </div>
     </section>
 
     <IDAImportance />
 
     <IDAApps />
+
+    <Footer />
   </div>
 );
 

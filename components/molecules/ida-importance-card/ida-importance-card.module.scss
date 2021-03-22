@@ -3,7 +3,7 @@
 
 .card {
   display: grid;
-  grid-gap: $spacing-stack-xxs;
+  gap: $spacing-stack-xxs;
   grid-template-rows: 80px 40px auto;
   text-align: center;
   justify-items: center;

@@ -29,7 +29,7 @@
       width: 100%;
       display: grid;
       grid-template-columns: 1fr 1fr;
-      grid-gap: $spacing-stack-xxs;
+      gap: $spacing-stack-xxs;
       padding-left: $spacing-inset-sm;
       padding-right: $spacing-inset-sm;
       margin-bottom: $spacing-stack-sm;
@@ -44,7 +44,7 @@
       width: 100%;
       display: grid;
       grid-template-columns: 46px 1fr;
-      grid-gap: $spacing-stack-xxs;
+      gap: $spacing-stack-xxs;
       padding-left: $spacing-inset-sm;
       padding-right: $spacing-inset-sm;
       margin-bottom: $spacing-stack-sm;

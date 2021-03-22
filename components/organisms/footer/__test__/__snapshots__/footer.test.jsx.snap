@@ -1,0 +1,143 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer matches snapshot dark footer 1`] = `
+<footer
+  className="footer"
+>
+  <div
+    className="content"
+  >
+    <ul
+      className="siteMap"
+    >
+      <li
+        className="item"
+      >
+        <a
+          href="/quem-somos"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+        >
+          Quem somos
+        </a>
+      </li>
+      <li
+        className="item"
+      >
+        <a
+          href="/contato"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+        >
+          Fale conosco
+        </a>
+      </li>
+      <li
+        className="item"
+      >
+        <a
+          href="/use-terms"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+        >
+          Termos de uso
+        </a>
+      </li>
+      <li
+        className="item"
+      >
+        <a
+          href="/politica-de-privacidade"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+        >
+          Política de privacidade
+        </a>
+      </li>
+    </ul>
+    <ul
+      className="socials"
+    >
+      <li
+        className="item"
+      >
+        <a
+          href="#1"
+        >
+          <img
+            alt="Acesse o facebook da IDA"
+            src="/static/icons/white-facebook.svg"
+          />
+        </a>
+      </li>
+      <li
+        className="item"
+      >
+        <a
+          href="#2"
+        >
+          <img
+            alt="Acesse o instagram da IDA"
+            src="/static/icons/white-instagram.svg"
+          />
+        </a>
+      </li>
+      <li
+        className="item"
+      >
+        <a
+          href="#3"
+        >
+          <img
+            alt="Acesse o twitter da IDA"
+            src="/static/icons/white-twitter.svg"
+          />
+        </a>
+      </li>
+    </ul>
+    <ul
+      className="makers __white"
+    >
+      <li
+        className="item"
+      >
+        <a
+          href="#4"
+        >
+          <img
+            alt="Acesse o site da Mídia NINJA"
+            data-testid="maker-icon"
+            src="/static/icons/white-ninja.svg"
+          />
+        </a>
+      </li>
+      <li
+        className="item"
+      >
+        <a
+          href="#5"
+        >
+          <img
+            alt="Acesse o site da Zona de Propulsão"
+            data-testid="maker-icon"
+            src="/static/icons/white-zona.svg"
+          />
+        </a>
+      </li>
+      <li
+        className="item"
+      >
+        <a
+          href="#6"
+        >
+          <img
+            alt="Acesse o site do Disign Ativista"
+            data-testid="maker-icon"
+            src="/static/icons/white-design-ativista.svg"
+          />
+        </a>
+      </li>
+    </ul>
+  </div>
+</footer>
+`;
