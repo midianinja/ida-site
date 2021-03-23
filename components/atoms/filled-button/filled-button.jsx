@@ -27,11 +27,16 @@ const FilledButton = ({
   // should add small class if the button is small
   if (small) buttonClasses.push(style.__small);
 
+  // verify if should have on click action
+  const handleOnClick = () => {
+    if (!disabled) onClick();
+  }
+
   return (
     <button
       type={type}
       className={buttonClasses.join(' ')}
-      onClick={onClick}
+      onClick={handleOnClick}
       disabled={disabled}
       data-testid="button"
     >

@@ -79,4 +79,13 @@ footer.footer {
       }
     }
   }
+
+  &.__white {
+    background-color: $neutral-color-1;
+
+    > .content > ul.siteMap > li.item > a {
+      color: $brand-color-secondary-darkest;
+    }    
+  }
+
 }

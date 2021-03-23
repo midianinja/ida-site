@@ -69,6 +69,15 @@ const renderSiteMapLinks = () => siteMapLinks.map(({ href, label }) => (
  * @returns {React.Component} default header
  */
 const Footer = ({ theme }) => {
+  const footerClasses = [style.footer];
+  const footerVariantes = {
+    white: style.__white,
+    purple: style.__purple,
+    dark: style.__dark,
+  };
+
+  footerClasses.push(footerVariantes[theme]);
+
   const makersLinksWrapperClasses = [style.makers];
   const makersVariants = {
     white: style.__white,
@@ -79,7 +88,7 @@ const Footer = ({ theme }) => {
     .push(makersVariants[getContentColor(theme)])
   
   return (
-    <footer className={style.footer}>
+    <footer className={footerClasses.join(' ')}>
       <div className={style.content}>
         <ul className={style.siteMap}>
           {renderSiteMapLinks()}

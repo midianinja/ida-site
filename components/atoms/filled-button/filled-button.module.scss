@@ -25,5 +25,11 @@
 		padding: $spacing-squish-xs;
 		font-size: $font-size-xs;
 	}
+
+	&:disabled {
+		cursor: not-allowed;
+    background-color: $neutral-color-5;
+    color: $neutral-color-1;
+	}
 }
 

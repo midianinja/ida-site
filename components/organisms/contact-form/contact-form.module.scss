@@ -1,0 +1,28 @@
+@import '../../../styles/variables.scss';
+@import '../../../styles/devices.scss';
+
+section.contact {
+  padding: $spacing-inline-xs;
+  
+  > h1.title {
+    font-family: $font-family-secondary;
+    font-weight: $font-weight-bold;
+    color: $neutral-color-1;
+    font-size: $font-size-xl;
+    line-height: $line-height-compact;
+    text-align: center;
+    margin-bottom: $spacing-inline-xs;
+  }
+
+  > form.form {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr;
+    gap: $spacing-stack-xxxs;
+
+    > .submitWrapper {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}
