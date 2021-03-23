@@ -5,7 +5,32 @@ import Input from '../../atoms/input/input';
 import TextArea from '../../atoms/text-area/text-area';
 import FilledButton from '../../atoms/filled-button/filled-button';
 
-const ContactForm = () => {
+/**
+ * function to validate if the form data is valid to submit
+ * @param {object} data  form data
+ * @returns {object} contains if has error or not, with the error messages if
+ */
+const validate = () => ({ valid: true, errors: [] });
+
+/**
+ * function start when submit event is invocated 
+ * @param {object} data form data
+ * @param {function} onSubmit callback past by component params  
+ */
+const handleSubmit = ({ data, onSubmit }) => {
+  const { valid } = valid(data);
+  if (!valid) return;
+
+  onSubmit(data);
+};
+
+/**
+ * form to get contact with the IDA Collective
+ * @param {funciton} onSubmit function invocate when has submit event and the form data
+ * was valid
+ * @returns {React.Component} form
+ */
+const ContactForm = ({ onSubmit }) => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [subject, setSubject] = useState('');
@@ -56,7 +81,12 @@ const ContactForm = () => {
             disabled
             type="submit"
             small
-            onClick={() => {}}
+            onClick={() => handleSubmit({
+              data: {
+                name, subject, email, message,
+              },
+              onSubmit,
+            })}
           >
             Enviar
           </FilledButton>
@@ -67,7 +97,7 @@ const ContactForm = () => {
 }
 
 ContactForm.propTypes = {
-
+  onSubmit: PropTypes.func.isRequired,
 };
 
 export default ContactForm;
