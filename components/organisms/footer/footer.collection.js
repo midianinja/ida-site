@@ -4,7 +4,7 @@ export const siteMapLinks = [
     label: 'Quem somos',
   },
   {
-    href: '/contato',
+    href: '/quem-somos#contato',
     label: 'Fale conosco',
   },
   {

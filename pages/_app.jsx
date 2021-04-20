@@ -1,20 +1,20 @@
+/* eslint-disable react/jsx-props-no-spreading */
 import React from 'react';
-import PropTypes from 'prop-types';
+import App from 'next/app';
+import { StoreProvider } from '../store/Store';
+import Main from '../components/main/main';
 import '../styles/globals.scss';
 import '../styles/variables.scss';
 
-/**
- * root application component
- * @param {React.Component} Component page to be render
- * @param {object} pageProps page properties
- * @returns {React.Component} application
- */
-const RootComponent = ({ Component, pageProps }) => <Component {...pageProps} />;
-
-// define react prototypes
-RootComponent.propTypes = {
-  Component: PropTypes.func.isRequired,
-  pageProps: PropTypes.objectOf(PropTypes.object).isRequired
-};
-
-export default RootComponent;
+export default class MyApp extends App {
+  render() {
+    const { Component, pageProps } = this.props;
+    return (
+      <StoreProvider>
+        <Main>
+          <Component {...pageProps} />
+        </Main>
+      </StoreProvider>
+    );
+  }
+}
