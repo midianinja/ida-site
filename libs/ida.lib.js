@@ -1,5 +1,6 @@
 /* eslint-disable no-undef */
 /* eslint-disable no-async-promise-executor */
+// eslint-disable-next-line no-return-await
 const ida = async () => await import('@resystem/ida-js-sdk');
 
 // ida configurations, contains the app keys
@@ -21,7 +22,7 @@ export const init = ({ onAuthChange }) =>
       ...idaConfiguration,
       onAuthChange,
       onLoad: (payload) => res(payload),
-      onOpen: (data) => console.log('Initialized IDa!', data)
+      onOpen: () => {}
     });
   });
 
