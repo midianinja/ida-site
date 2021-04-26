@@ -1662,10 +1662,10 @@
     schema-utils "^2.6.5"
     source-map "^0.7.3"
 
-"@resystem/ida-js-sdk@^0.2.4":
-  version "0.2.4"
-  resolved "https://registry.yarnpkg.com/@resystem/ida-js-sdk/-/ida-js-sdk-0.2.4.tgz#8c5c035edac17a4383eb53f9f6152d9183fae6da"
-  integrity sha512-ahm4JGCELVWzTayOGHthuZUQLY7xbyi+BQpN8fUGnIAfNOW6dUzdaN8ItqlNnRdw2sJJkkesobLp8vRYw57tkQ==
+"@resystem/ida-js-sdk@^0.2.5":
+  version "0.2.5"
+  resolved "https://registry.yarnpkg.com/@resystem/ida-js-sdk/-/ida-js-sdk-0.2.5.tgz#3b684a3aa0c178324078f374c01cd347059bc581"
+  integrity sha512-+603fLMm5XF8b4KtIQxvuJYx/xnAEl3hrfPgsUQsmUfMKoxRvdwhhhi+g+Yt3OyLr5UUf8omW8Yp6yE4/a8aXg==
   dependencies:
     "@babel/core" "^7.11.6"
     "@babel/helper-regex" "^7.10.5"
