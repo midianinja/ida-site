@@ -10,6 +10,20 @@ const GREEN_D_BLUR = 'GREEN_D_BLUR';
 const RED_D_SOLID = 'RED_D_SOLID';
 const RED_D_BLUR = 'RED_D_BLUR';
 
+export const tokens = {
+  PURPLE_A_BLUR,
+  PURPLE_D_SOLID,
+  WHITE_A_OUTLINE,
+  WHITE_I_OUTLINE,
+  WHITE_D_OUTLINE,
+  WHITE_A_OUTLINE_BLUR,
+  WHITE_I_OUTLINE_BLUR,
+  GREEN_D_SOLID,
+  GREEN_D_BLUR,
+  RED_D_SOLID,
+  RED_D_BLUR
+};
+
 export const illustrations = [
   {
     id: PURPLE_A_BLUR,
