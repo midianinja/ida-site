@@ -8,11 +8,11 @@ export const siteMapLinks = [
     label: 'Fale conosco',
   },
   {
-    href: '/use-terms',
+    href: '/termos',
     label: 'Termos de uso',
   },
   {
-    href: '/politica-de-privacidade',
+    href: '/termos#politicaas-de-privacidade',
     label: 'Política de privacidade',
   },
 ];

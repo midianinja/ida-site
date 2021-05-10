@@ -7,6 +7,7 @@ div.IDABackground {
   position: absolute;
   width: 100%;
   top: 0;
+  user-select: none;
   
   > div.sectionWrapper {
     display: grid;
@@ -29,6 +30,12 @@ div.IDABackground {
         }
       }
     }
+  }
+
+  display: none;
+
+  @include for-tablet-landscape-up {
+    display: block;
   }
 }
 

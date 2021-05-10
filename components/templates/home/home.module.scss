@@ -82,32 +82,40 @@
     text-align: center;
   }
 
-  > section.about {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: $spacing-squish-xs;
-    margin-top: $spacing-stack-xs;
-    margin-bottom: $spacing-stack-xs;
+  section.about {
+    position: relative;
+    z-index: 20;
+    
 
-    @include for-tablet-landscape-up {
-      display: inline-grid;
-      grid-template-columns: 1fr 243px;
-      gap: $spacing-stack-lg;
-      align-items: center;
-      padding: $spacing-squish-lg;
+    > div.wrapper {
+      display: flex;
+      width: 100%;
       max-width: 768px;
       margin-left: auto;
       margin-right: auto;
-      margin-top: $spacing-stack-xxl;
-      margin-bottom: $spacing-stack-xxxl;
-
-      > .actionWrapper {
-        display: none;
+      flex-direction: column;
+      align-items: center;
+      padding: $spacing-squish-xs;
+      margin-top: $spacing-stack-xs;
+      margin-bottom: $spacing-stack-xs;
+      
+      @include for-tablet-landscape-up {
+        display: inline-grid;
+        grid-template-columns: 1fr 243px;
+        gap: $spacing-stack-lg;
+        align-items: center;
+        padding: $spacing-squish-lg;
+        margin-top: $spacing-stack-xxl;
+        margin-bottom: $spacing-stack-xxxl;
+  
+        .actionWrapper {
+          display: none;
+        }
       }
     }
 
-    > .connectWithWrapper {
+
+    .connectWithWrapper {
       display: flex;
       align-items: center;
       gap: $spacing-stack-xxxs;
@@ -125,7 +133,7 @@
       }
     }
 
-    > p.text {
+    p.text {
       color: $neutral-color-1;
       line-height: $line-height-far;
       text-align: center;

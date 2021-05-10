@@ -9,7 +9,8 @@
   justify-items: center;
   cursor: pointer;
 
-  .image {
+  .circularImage {
+    width: 92px;
     height: 92px;
     border-radius: $border-radius-circular;
   }

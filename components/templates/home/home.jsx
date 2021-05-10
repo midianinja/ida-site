@@ -59,37 +59,44 @@ const Home = () => {
             alt="Clique nessa imagem para saber mais sobre a IDa"
           />
         </button>
+
       </section>
 
+      <BackgroundIllustration />
+
       <section className={style.about}>
-        <div className={style.connectWithWrapper}>
-          <h2 className={style.title}>Com a IDa você</h2>
-          <OutlineButton
-            color="white"
-            small
-            onClick={() => {
-              if (state.idaSDK) state.idaSDK.signinWithPopup();
-            }}
-          >
-            SE CONECTA
-          </OutlineButton>
+        <div className={style.wrapper}>
+          <div className={style.connectWithWrapper}>
+            <h2 className={style.title}>Com a IDa você</h2>
+            <OutlineButton
+              color="white"
+              small
+              onClick={() => {
+                if (state.idaSDK) state.idaSDK.signinWithPopup();
+              }}
+            >
+              SE CONECTA
+            </OutlineButton>
+          </div>
+
+          <p className={style.text}>
+            A IDa é um serviço de autenticação digital que conecta ativistas ao Banco de Tecnologias da Mídia NINJA.
+          </p>
+
+          <div className={style.actionWrapper}>
+            <FilledButton
+              color="white"
+              small
+              onClick={() => {
+                if (state.idaSDK) state.idaSDK.signupWithPopup();
+              }}
+            >
+              Cadastre-se
+            </FilledButton>
+          </div>
         </div>
 
-        <p className={style.text}>
-          A IDa é um serviço de autenticação digital que conecta ativistas ao Banco de Tecnologias da Mídia NINJA.
-        </p>
-
-        <div className={style.actionWrapper}>
-          <FilledButton
-            color="white"
-            small
-            onClick={() => {
-              if (state.idaSDK) state.idaSDK.signupWithPopup();
-            }}
-          >
-            Cadastre-se
-          </FilledButton>
-        </div>
+        <BackgroundIllustration />
       </section>
 
       <IDAImportance />
@@ -97,8 +104,6 @@ const Home = () => {
       <IDAApps />
 
       <Footer />
-
-      <BackgroundIllustration />
     </div>
   );
 };

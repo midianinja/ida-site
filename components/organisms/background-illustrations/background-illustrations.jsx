@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useLayoutEffect } from 'react';
 import PropTypes from 'prop-types';
 import { illustrations } from './background-illustrations.collection';
 import style from './background-illustrations.module.scss';
@@ -95,8 +95,8 @@ const renderIllustrations = (data, left) => data.map(({
  * @param {array} shape data list of illustration to be render
  * @returns {array} section list in React.Component
  */
-const renderSections = (shape) => shape.map(({ left, right }, index) => (
-  <div key={index} className={style.sectionWrapper}>
+const renderSections = (shape) => shape.map(({ left, right }) => (
+  <div key={`${left.id}${right.id}`} className={style.sectionWrapper}>
     <div className={style.leftWrapper}>
       {renderIllustrations(left, true)}
     </div>
@@ -114,7 +114,7 @@ const BackgroundIllustration = ({ sectionsAmount }) => {
   const [shape, setShape] = useState(null);
 
   // initial cycle of component, mapping illustrations
-  useEffect(() => {
+  useLayoutEffect(() => {
     setBackgroundShape(sectionsAmount, setShape);
   }, []);
 

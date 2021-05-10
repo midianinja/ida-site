@@ -10,7 +10,13 @@ export const apps = [
     name: '500 Cidades',
     id: '500-cidades',
     url: 'https://500cidades.org'
-  }
+  },
+  {
+    image: '/static/images/oasi.jpg',
+    name: 'Oasi',
+    id: 'oasi',
+    url: 'https://oasi.vc'
+  },
 ];
 
 export default apps;
